@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ros2_control will be added in Phase 2. -->
+
+</robot>

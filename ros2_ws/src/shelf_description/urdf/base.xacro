@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Ground-level navigation reference -->
+  <link name="base_footprint"/>
+
+  <!-- Main robot chassis -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="robot_blue"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+
+    <xacro:box_inertial
+      mass="${base_mass}"
+      x="${base_length}"
+      y="${base_width}"
+      z="${base_height}"/>
+  </link>
+
+  <!-- Position base_link above the floor -->
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin
+      xyz="0 0 ${base_ground_clearance + base_height / 2.0}"
+      rpy="0 0 0"/>
+  </joint>
+  <xacro:macro name="caster" params="name x_position">
+
+    <link name="${name}_caster_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="${caster_radius}"/>
+        </geometry>
+        <material name="robot_gray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="${caster_radius}"/>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="${caster_mass}"/>
+        <inertia
+          ixx="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"
+          ixy="0.0"
+          ixz="0.0"
+          iyy="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"
+          iyz="0.0"
+          izz="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"/>
+      </inertial>
+    </link>
+
+    <joint name="${name}_caster_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="${name}_caster_link"/>
+      <origin
+        xyz="${x_position} 0 ${-base_height / 2.0}"
+        rpy="0 0 0"/>
+    </joint>
+
+  </xacro:macro>
+
+  <xacro:caster name="front" x_position="${base_length * 0.35}"/>
+  <xacro:caster name="rear" x_position="${-base_length * 0.35}"/>
+
+</robot>
+
