@@ -2,6 +2,116 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- Sensors will be added in a later step. -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.045" length="0.06"/>
+      </geometry>
+      <material name="sensor_red"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.045" length="0.06"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.20"/>
+      <inertia
+        ixx="0.00011625"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.00011625"
+        iyz="0.0"
+        izz="0.0002025"/>
+    </inertial>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin
+      xyz="0 0 ${base_height / 2.0 + lidar_height}"
+      rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.08 0.05 0.04"/>
+      </geometry>
+      <material name="robot_gray"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.08 0.05 0.04"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.15"/>
+      <inertia
+        ixx="0.00005125"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0001"
+        iyz="0.0"
+        izz="0.00011125"/>
+    </inertial>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin
+      xyz="${base_length / 2.0 - 0.08} 0 ${base_height / 2.0 + camera_height}"
+      rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_optical_frame"/>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child link="camera_optical_frame"/>
+    <origin
+      xyz="0.04 0 0"
+      rpy="${-pi / 2.0} 0 ${-pi / 2.0}"/>
+  </joint>
+
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.02"/>
+      </geometry>
+      <material name="robot_black"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.04 0.04 0.02"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.05"/>
+      <inertia
+        ixx="0.000008333"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.000008333"
+        iyz="0.0"
+        izz="0.000013333"/>
+    </inertial>
+  </link>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin
+      xyz="0 0 ${base_height / 2.0 + 0.03}"
+      rpy="0 0 0"/>
+  </joint>
 
 </robot>
