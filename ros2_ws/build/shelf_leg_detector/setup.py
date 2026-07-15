@@ -1,1 +1,0 @@
-/home/azureuser/autonomous-shelf-robot/ros2_ws/src/autonomous-shelf-robot/shelf_leg_detector/setup.py

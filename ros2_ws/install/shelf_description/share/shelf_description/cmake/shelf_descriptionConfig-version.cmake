@@ -1,1 +1,0 @@
-/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/ament_cmake_core/shelf_descriptionConfig-version.cmake
