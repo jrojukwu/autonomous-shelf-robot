@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+resource/shelf_navigation
+shelf_navigation/__init__.py
+shelf_navigation.egg-info/PKG-INFO
+shelf_navigation.egg-info/SOURCES.txt
+shelf_navigation.egg-info/dependency_links.txt
+shelf_navigation.egg-info/entry_points.txt
+shelf_navigation.egg-info/requires.txt
+shelf_navigation.egg-info/top_level.txt
+shelf_navigation.egg-info/zip-safe

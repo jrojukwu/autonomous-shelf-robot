@@ -1,0 +1,4 @@
+source;share/shelf_interfaces/local_setup.bash
+source;share/shelf_interfaces/local_setup.dsv
+source;share/shelf_interfaces/local_setup.sh
+source;share/shelf_interfaces/local_setup.zsh

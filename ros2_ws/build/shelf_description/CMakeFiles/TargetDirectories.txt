@@ -1,0 +1,9 @@
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/uninstall.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/shelf_description_uninstall.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/test.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/edit_cache.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/rebuild_cache.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/list_install_components.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/install.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/install/local.dir
+/home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_description/CMakeFiles/install/strip.dir

@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating shelf_leg_detector.egg-info
+writing shelf_leg_detector.egg-info/PKG-INFO
+writing dependency_links to shelf_leg_detector.egg-info/dependency_links.txt
+writing entry points to shelf_leg_detector.egg-info/entry_points.txt
+writing requirements to shelf_leg_detector.egg-info/requires.txt
+writing top-level names to shelf_leg_detector.egg-info/top_level.txt
+writing manifest file 'shelf_leg_detector.egg-info/SOURCES.txt'
+reading manifest file 'shelf_leg_detector.egg-info/SOURCES.txt'
+writing manifest file 'shelf_leg_detector.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/lib/python3.10/site-packages/shelf-leg-detector.egg-link (link to .)
+
+Installed /home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_leg_detector
+running symlink_data
+creating /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/share/ament_index
+creating /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/share/ament_index/resource_index
+creating /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/share/ament_index/resource_index/packages
+symbolically linking /home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_leg_detector/resource/shelf_leg_detector -> /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/share/ament_index/resource_index/packages
+symbolically linking /home/azureuser/autonomous-shelf-robot/ros2_ws/build/shelf_leg_detector/package.xml -> /home/azureuser/autonomous-shelf-robot/ros2_ws/install/shelf_leg_detector/share/shelf_leg_detector

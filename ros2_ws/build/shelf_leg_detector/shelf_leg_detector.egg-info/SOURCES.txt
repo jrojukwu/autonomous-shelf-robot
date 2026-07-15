@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+resource/shelf_leg_detector
+shelf_leg_detector/__init__.py
+shelf_leg_detector.egg-info/PKG-INFO
+shelf_leg_detector.egg-info/SOURCES.txt
+shelf_leg_detector.egg-info/dependency_links.txt
+shelf_leg_detector.egg-info/entry_points.txt
+shelf_leg_detector.egg-info/requires.txt
+shelf_leg_detector.egg-info/top_level.txt
+shelf_leg_detector.egg-info/zip-safe

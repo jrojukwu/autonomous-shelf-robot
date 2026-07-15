@@ -1,0 +1,9 @@
+source;share/shelf_state_machine/hook/pythonpath.ps1
+source;share/shelf_state_machine/hook/pythonpath.dsv
+source;share/shelf_state_machine/hook/pythonpath.sh
+source;share/shelf_state_machine/hook/ament_prefix_path.ps1
+source;share/shelf_state_machine/hook/ament_prefix_path.dsv
+source;share/shelf_state_machine/hook/ament_prefix_path.sh
+source;../../build/shelf_state_machine/share/shelf_state_machine/hook/pythonpath_develop.ps1
+source;../../build/shelf_state_machine/share/shelf_state_machine/hook/pythonpath_develop.dsv
+source;../../build/shelf_state_machine/share/shelf_state_machine/hook/pythonpath_develop.sh

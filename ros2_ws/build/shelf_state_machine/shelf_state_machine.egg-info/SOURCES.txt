@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+resource/shelf_state_machine
+shelf_state_machine/__init__.py
+shelf_state_machine.egg-info/PKG-INFO
+shelf_state_machine.egg-info/SOURCES.txt
+shelf_state_machine.egg-info/dependency_links.txt
+shelf_state_machine.egg-info/entry_points.txt
+shelf_state_machine.egg-info/requires.txt
+shelf_state_machine.egg-info/top_level.txt
+shelf_state_machine.egg-info/zip-safe
