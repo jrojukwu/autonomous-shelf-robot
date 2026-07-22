@@ -7,7 +7,7 @@
     <ros2_control name="ShelfRobotSystem" type="system">
 
       <hardware>
-        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        <plugin>mock_components/GenericSystem</plugin>
       </hardware>
 
       <joint name="left_wheel_joint">

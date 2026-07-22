@@ -2,6 +2,16 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- Gazebo configuration will be added later. -->
+  <gazebo>
+    <plugin
+      name="gazebo_ros2_control"
+      filename="libgazebo_ros2_control.so">
+
+      <parameters>
+        $(find shelf_description)/config/controllers.yaml
+      </parameters>
+
+    </plugin>
+  </gazebo>
 
 </robot>
