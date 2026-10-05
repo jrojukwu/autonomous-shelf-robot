@@ -19,3 +19,11 @@ ros2 launch shelf_description gazebo.launch.py gui:=false
 This verifies basic commanded motion and stopping through wheel odometry.
 No laser-scan topic was present in the observed topic list.
 Navigation and shelf detection were not tested in this session.
+
+## LiDAR added and verified
+After the initial drive test, a Gazebo ray sensor was added.
+- shelf_description rebuilt successfully.
+- /scan publishes sensor_msgs/msg/LaserScan.
+- A received message reports frame_id: lidar_link.
+- Measured publishing rate: approximately 9.99 Hz.
+- Obstacle detection and navigation remain untested.
